@@ -1,0 +1,75 @@
+/* Fondo negro y centrado */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #2e2c2c;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor del buscador */
+.container {
+  text-align: center;
+  width: 100%;
+}
+
+/* Caja de búsqueda */
+.search-box {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+
+/* Input moderno */
+.search-box input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: #c00000;   /* rojo */
+  color: #ffffff;           /* texto blanco */
+}
+
+/* Placeholder en blanco con opacidad */
+.search-box input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Dropdown de sugerencias */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #111;
+  border: 1px solid #444;
+  border-radius: 8px;
+  margin-top: 5px;
+  display: none;
+  z-index: 100;
+  color: white;
+}
+
+.dropdown div {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdown div:hover {
+  background: #c00000;
+  color: white;
+}
+.container h1 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
